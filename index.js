@@ -9,9 +9,14 @@ function Close() {
     document.getElementsByClassName("progress")[0].classList.remove("blur");
 }
 
+var click = new Audio("btnClick.mp3");
+document.querySelector(".pushable").addEventListener("click", function() {
+  click.play()
+})
+
 function Meo(){
-    var click = new Audio("btnClick.mp3");
-    click.play()
+    // var click = new Audio("btnClick.mp3");
+    // click.play()
 
     document.getElementsByClassName("pushable")[0].classList.add("blur");
     document.getElementsByClassName("progress")[0].classList.remove("hide");
